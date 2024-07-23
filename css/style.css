@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600&display=swap');
+
+:root {
+  --colorLogo: #707070;
+  --colorTitulos: #FFB968;
+  --colorPromo1: #807871;
+  --colorPromo2: #E3b684;
+  --tamañoLetra: 32px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Globales */
+
+a {
+  text-decoration: none;
+}
+
+/* ! HEADER */
+
+header {
+  height: 72px;
+  width: 1100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto
+
+}
+
+  header a {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--colorLogo)
+  }
+
+  header a img {
+    width: 60px;
+    vertical-align: middle;
+    margin-right: 16px;
+  
+  }
+
+  nav a {
+    padding: 12px;
+  }
+
+/* Hero BANNER */
+
+#hero {
+  height: 500px;
+  background-image: url("imgs/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center -120px;
+
+  display: flex;
+  vertical-align: center;
+  
+}
+
+  #hero div {
+    width: 1100px;
+    margin: auto;
+  }
+
+  #hero div h1 {
+    width: 450px;
+    color: var(--colorPromo2);
+  }
+
+  #hero div p {
+    width: 450px;
+    margin-top: 25px;
+    color: var(--colorLogo);
+  }
+
+main {
+  width: 1100px;
+  margin: auto;
+
+}
+
+ /* ! PRIMER SEPARADOR :"lets go hiking" */
+
+  #separador h2 {
+    margin-top: 88px;
+    font-size: var(--tamañoLetra);
+    color: var(--colorTitulos);
+    text-align: center;
+
+    
+
+  }
+
+  #separador p {
+    width: 600px;
+    margin: 24px auto 88px auto;
+    text-align: center;
+    color: var(--colorLogo);
+
+  }
+
+  /* !PROMOS */
+
+/*  #promos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #promos h2 {
+    font-size: var(--tamañoLetra);
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  #promos #promo1, #promos #promo2 {
+    
+  } */
+
+  #promos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #promos h2 {
+    font-size: var(--tamañoLetra);
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  #promos #promo1,  #promos #promo2 {
+    width: 550px;
+    height: 550px;
+    padding: 100px 80px;
+    margin-right: 55;
+    color: #fff;
+  }
+  
+
+  #promos #promo1 {
+    background-color: var(--colorPromo1);
+  }
+
+  #promos #promo2 {
+    background-color: var(--colorPromo2);
+  }
+
+  /* ! SEPARADOR 2 HIKING DE AVENTURA */
+
+  #separador2 {
+    height: 200px;
+    display: flex;
+    align-items: center; /* centra verticalmente */
+    justify-content: center; /* centra horizontalmente */
+  }
+  
+  #separador2 h2 {
+    color: var(--colorTitulos);
+    font-size: var(--tamañoLetra);
+    font-weight: 600;
+  }
+
+  /* ! HISTORIA */
+
+  #historia {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  #historia article {
+    width: 339px;
+    background-color: var(--colorPromo1);
+    color: #fff;
+
+  }
+
+  #historia article h3 {
+
+    margin: 24px 36px 16px 36px;
+  
+  }
+
+  #historia article p {
+    margin: 8px 36px 16px 36px;
+  }
+
+/* CONTACTO */
+
+#contacto {
+  height: 580px;
+  margin-top: 80px;
+  padding-top: 80px;
+  background-image: url('/imgs/hero-3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+  #contacto form {
+    width: 698px;
+    margin: auto;
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    
+  }
+
+  #contacto form label {
+    padding: 8px;
+    display: block;
+  }
+
+  #contacto form input, #contacto form textarea {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    border: 1px solid #cecece;
+    border-radius: 8px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+  }
+
+  #contacto form button {
+    background-color: #E3b684;
+    border: 1px solid #FFB968;
+    width: 50%;
+    margin-top: 8px;
+    /* margin-left: 8px; */
+    padding: 12px;
+    border-radius: 8px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+/* ! FOOTER */
+
+footer {
+  background-color: var(--colorPromo1);
+  margin-top: 80px;
+}
+
+  #pie{
+    width: 1100px;
+    margin: auto;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+
+
+  /* ! Redes sociales */
+  #social img {
+    width: 24px;
+    margin-left: 12px;
+  }
+
+  /* ! Enlaces internos */
+  #enlaces {
+    display: flex;
+
+  }
+
+    #enlaces ul {
+      margin-left: 76px;
+    }
+    .titulo-lista {
+      font-weight: 600;
+    }
+
+    #enlaces li {
+      list-style-type: none;
+      margin-top: 8px;
+    }
